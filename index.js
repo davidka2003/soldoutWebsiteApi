@@ -4,9 +4,9 @@ const app = express()
 app.use(express.json())
 const PORT = process.env.PORT || 3000
 app.use("/api", discordRouter)
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
     res.status(400).json({
-        success: true
+        success: false
     })
 })
 
