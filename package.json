@@ -16,7 +16,7 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "davidka2003",
   "license": "ISC",
   "description": ""
 }
