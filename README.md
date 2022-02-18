@@ -1,6 +1,8 @@
 # soldoutWebsiteApi
 api endpoint: /api/successes
+<br>
 response model:
+<br>
 {
     "success": boolean,
     "data": { nickname: string, timestamp: number, attachment: string }[](max length 99)
