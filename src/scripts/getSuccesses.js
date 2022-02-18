@@ -34,12 +34,12 @@ client.on("message", (message) => {
                 return currentDb.unshift(parseMessage(message)),
                     writeFileSync(PATH_TO_DB, JSON.stringify(currentDb, null, 2)),
                     refreshDB(currentDb, PATH_TO_DB)
-            case "943203443236020244":
-                // other
-                console.log("test")
-                return currentDb.unshift(parseMessage(message)),
-                    writeFileSync(PATH_TO_DB, JSON.stringify(currentDb, null, 2)),
-                    refreshDB(currentDb, PATH_TO_DB)
+            // case "943203443236020244":
+            //     // other
+            //     console.log("test")
+            //     return currentDb.unshift(parseMessage(message)),
+            //         writeFileSync(PATH_TO_DB, JSON.stringify(currentDb, null, 2)),
+            //         refreshDB(currentDb, PATH_TO_DB)
 
 
             default:
