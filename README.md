@@ -1,4 +1,5 @@
 # soldoutWebsiteApi
+to install libs: npm i or yarn
 api endpoint: /api/successes
 <br>
 response model:
