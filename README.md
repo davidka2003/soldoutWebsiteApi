@@ -1,6 +1,8 @@
 # soldoutWebsiteApi
 to install libs: npm i or yarn
 <br>
+edit .env with your discord bot key
+<br>
 api endpoint: /api/successes
 <br>
 response model:
