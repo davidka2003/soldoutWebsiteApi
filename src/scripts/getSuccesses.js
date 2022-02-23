@@ -18,22 +18,22 @@ client.on("message", (message) => {
         switch (message.channel.id) {
             case "799348201161228308":
                 // successnft
-                console.log("nft")
+                console.log("other")
                 return currentDb.unshift(parseMessage(message, "nft")),
                     writeFileSync(PATH_TO_DB, JSON.stringify(currentDb, null, 2)),
                     refreshDB(currentDb, PATH_TO_DB)
-            case "938860820559978546":
+            case "796517283845111838":
                 // successwl
                 console.log("wl")
                 return currentDb.unshift(parseMessage(message)),
                     writeFileSync(PATH_TO_DB, JSON.stringify(currentDb, null, 2)),
                     refreshDB(currentDb, PATH_TO_DB)
-            case "796517283845111838":
-                // other
-                console.log("other")
-                return currentDb.unshift(parseMessage(message)),
-                    writeFileSync(PATH_TO_DB, JSON.stringify(currentDb, null, 2)),
-                    refreshDB(currentDb, PATH_TO_DB)
+            // case "796517283845111838":
+            //     // other
+            //     console.log("other")
+            //     return currentDb.unshift(parseMessage(message)),
+            //         writeFileSync(PATH_TO_DB, JSON.stringify(currentDb, null, 2)),
+            //         refreshDB(currentDb, PATH_TO_DB)
             // case "943203443236020244":
             //     // other
             //     console.log("test")
