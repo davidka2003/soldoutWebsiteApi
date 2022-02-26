@@ -53,6 +53,7 @@ client.on("message", (message) => {
 
 const parseMessage = (message) => {
     const attachment = [...message.attachments.entries()].map(attachment => attachment[1].attachment)[0]
+        .replace("cdn.discordapp.com", "media.discordapp.net")
     const nickname = `${message.author.username}#${message.author.discriminator}`
     const timestamp = message.createdTimestamp
     if (!attachment) throw "no attachment"
